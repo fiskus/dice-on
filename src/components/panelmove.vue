@@ -1,6 +1,6 @@
 <template>
   <div>
-    <move-microstep v-for="n in $store.state.count" />
+    <move-microstep v-for="n in $store.state.count" :key="n" />
   </div>
 </template>
 
