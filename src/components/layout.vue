@@ -4,6 +4,7 @@
       <panel-menu :kek=kek />
     </div>
     <div class="panel-move-wrapper">
+      <panel-move />
     </div>
     <div class="panel-system-wrapper">
     </div>
@@ -12,6 +13,7 @@
 
 <script>
   import PanelMenu from './panelmenu';
+  import PanelMove from './panelmove';
 
   export default {
     name: 'layout',
@@ -28,6 +30,7 @@
     },
     components: {
       PanelMenu,
+      PanelMove,
     },
   };
 </script>
