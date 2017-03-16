@@ -19,6 +19,7 @@
     },
     methods: {
       click(label) {
+        window.console.log(label, this.$store.state.count);
         this.$store.commit('increment');
       },
     },
