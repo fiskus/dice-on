@@ -6,12 +6,14 @@
     <div class="panel-move-wrapper">
       <panel-move />
     </div>
-    <div class="panel-system-wrapper">
+    <div class="panel-map-wrapper">
+      <panel-map />
     </div>
   </div>
 </template>
 
 <script>
+  import PanelMap from './panelmap';
   import PanelMenu from './panelmenu';
   import PanelMove from './panelmove';
 
@@ -29,6 +31,7 @@
       };
     },
     components: {
+      PanelMap,
       PanelMenu,
       PanelMove,
     },
@@ -40,6 +43,11 @@
   .layout {
     display: flex;
   }
+
   .panel-menu-wrapper {
+  }
+
+  .panel-map-wrapper {
+    flex: 1;
   }
 </style>
