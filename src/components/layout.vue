@@ -17,6 +17,9 @@
   import PanelMenu from './panelmenu';
   import PanelMove from './panelmove';
 
+  const a : number = 1;
+  window.console.log(a + 1);
+
   export default {
     name: 'layout',
     props: {
